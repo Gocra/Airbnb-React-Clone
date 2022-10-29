@@ -1,0 +1,58 @@
+.rooms-container{
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) );
+    margin-top: 24px;
+    gap: 1.5rem;
+    padding: 0 40px;
+}
+
+.rooms-container .room .images-container img{
+    border-radius: 1rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    vertical-align: bottom;
+    margin-bottom: 0.25rem;
+}
+
+.rooms-container .room .content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0.25rem;
+}
+
+.rooms-container .room .content .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rooms-container .room .content .left .location{
+    font-weight: bold;
+}
+
+.rooms-container .room .content .left .price-container{
+    margin-top: .125rem;
+}
+
+.rooms-container .room .content .left .price{
+    font-weight: bold;
+}
+
+.rooms-container .room .content .left .price,
+.rooms-container .room .content .left .total{
+    text-decoration: underline;
+}
+
+.rooms-container .room .content .right .stars{
+    display: flex;
+    align-items: center;
+    gap: 0.175rem;
+}
+
+.rooms-container .room .content .right .stars .star {
+    height: 0.7rem;
+    width: 0.7rem;
+}

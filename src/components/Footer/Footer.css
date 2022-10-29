@@ -1,0 +1,63 @@
+.footer{
+    border-top: 1px solid var(--clr-light-grey);
+    padding: 12px 40px;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+.footer .left{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    /* flex: 1; */
+}
+
+.footer .left .dot{
+    font-weight: bold;
+    /* font-size: 0.9rem; */
+}
+
+.footer .left a:hover{
+    text-decoration: underline;
+}
+
+.footer .right{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem 1rem;
+    font-size: 0.875rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.footer .right .lanugage,
+.footer .right .currency,
+.footer .right .sandr{
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .right > *:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer .right .lanugage img,
+.footer .right .sandr img{
+    width: 16px;
+    height: 16px;
+}
+
+.footer .right .sandr img{
+    margin-top: 2px;
+}
