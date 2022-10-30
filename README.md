@@ -10,3 +10,7 @@ Abandonded
 
 - Slider - functioning but not working well
 - No other added functionality
+
+## demo
+
+<img src="/demo/image.png" width="100%">
