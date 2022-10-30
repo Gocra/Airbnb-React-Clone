@@ -14,4 +14,4 @@ Abandonded
 
 ## demo
 
-<img src="/demo/image.png" width="100%">
+<img width="100%" src="/demo/image.png">
