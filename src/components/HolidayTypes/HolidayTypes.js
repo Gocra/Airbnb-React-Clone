@@ -8,6 +8,14 @@ import { useRef, useState, useEffect } from "react";
 const HolidayTypes = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const length = TYPES_OF_HOLIDAY.length;
+  const sliderRef = useRef();
+  const rightRef = useRef();
+  const leftRef = useRef();
+
+  useEffect(() => {
+    const rw = rightRef.current.clientWidth;
+    sliderRef.current.style.width = `calc(100% - ${rw}px)`;
+  }, [sliderRef, rightRef, leftRef]);
 
   const next = () => {
     if (currentIndex < length - 1) {
@@ -25,21 +33,23 @@ const HolidayTypes = () => {
     <div className="holiday-types">
       <div className="container">
         {currentIndex > 0 && (
-          <div className="left-arrow">
+          <div className="left-arrow" ref={leftRef}>
             <button onClick={() => prev()}>
               <img src={ChevronLeftIcon} />
             </button>
           </div>
         )}
-        <div
-          className="types"
-          style={{ transform: `translateX(-${currentIndex * 25}%)` }}
-        >
-          {TYPES_OF_HOLIDAY.map((type) => {
-            return <Type key={type.id} {...type} />;
-          })}
+        <div className="slider" ref={sliderRef}>
+          <div
+            className="types"
+            style={{ transform: `translateX(-${currentIndex * 90}%)` }}
+          >
+            {TYPES_OF_HOLIDAY.map((type) => {
+              return <Type key={type.id} {...type} />;
+            })}
+          </div>
         </div>
-        <div className="right">
+        <div className="right" ref={rightRef}>
           <div className="right-arrow">
             <button onClick={() => next()}>
               <img src={ChevronRightIcon} />

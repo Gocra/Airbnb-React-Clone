@@ -27,7 +27,12 @@
     display: flex;
     align-items: center;
     position: relative;
+}
+
+.holiday-types .container .slider{
     overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
 
 .holiday-types .container .right{
@@ -35,6 +40,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: fit-content;
 }
 
 .holiday-types .container .left-arrow,
@@ -83,8 +89,9 @@
     height: 12px;
 }
 
-.holiday-types .container .types{
+.holiday-types .container .slider .types{
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
