@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .holiday-types .container .right{
@@ -53,6 +54,13 @@
     top: 0;
 }
 
+.holiday-types .container .right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--bg-color);
+}
+
 .holiday-types .container .left-arrow button,
 .holiday-types .container .right .right-arrow button{
     border: 1px solid var(--clr-light-grey);
@@ -76,15 +84,12 @@
 }
 
 .holiday-types .container .types{
-    width: fit-content;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 32px;
-    overflow: hidden;
-    flex-grow: 1;
-    flex-shrink: 1;
+    transition: transform 1000ms ease-in-out;
 }
 
 .holiday-type{

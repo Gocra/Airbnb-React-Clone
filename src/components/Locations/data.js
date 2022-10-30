@@ -41,4 +41,40 @@ export const rooms = [
     price: "£906",
     stars: 4.92,
   },
+  {
+    id: 3,
+    pictures: [
+      "https://a0.muscache.com/im/pictures/265aaac3-ac6c-4bc5-997b-0bdbf4bcd04a.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/23e8abd8-9cf4-4a3b-9955-4785b1aa777b.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/e23b7021-88ce-4e8c-b237-641582915b1e.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/456a31f7-079f-4ee8-8984-2d9f56573f72.jpg?im_w=720",
+    ],
+    location: "Isle of Wight, UK",
+    host: "Professional Host",
+    date: "1-6 Nov",
+    price: "£1,333",
+    stars: 4.86,
+  },
+  {
+    id: 4,
+    pictures: [
+      "https://a0.muscache.com/im/pictures/00370466-e3f6-4213-aaff-10b2a51a7e15.jpg?im_w=720",
+    ],
+    location: "Raray, France",
+    host: "Professional Host",
+    date: "5-11 Mar",
+    price: "£1,915",
+    stars: "New",
+  },
+  {
+    id: 5,
+    pictures: [
+      "https://a0.muscache.com/im/pictures/2ce2f829-7965-479a-af98-c5a84824ce06.jpg?im_w=720",
+    ],
+    location: "Cantebury, UK",
+    host: "Professional Host",
+    date: "1-7 Nov",
+    price: "£2,163",
+    stars: "5.0",
+  },
 ];

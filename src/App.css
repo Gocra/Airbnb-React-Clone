@@ -40,3 +40,7 @@ a{
   color: unset;
   text-decoration: unset;
 }
+
+.mb{
+  margin-bottom: 80px;
+}

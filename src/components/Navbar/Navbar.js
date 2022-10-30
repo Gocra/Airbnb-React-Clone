@@ -3,6 +3,7 @@ import logo from "../../assets/logo.svg";
 import { ReactComponent as WorldIcon } from "../../assets/wireframeWorld.svg";
 import { ReactComponent as UserIcon } from "../../assets/user.svg";
 import { ReactComponent as HamburgerIcon } from "../../assets/hamburger.svg";
+import { ReactComponent as SearchIcon } from "../../assets/search.svg";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -24,7 +25,20 @@ const Logo = () => {
 };
 
 const SearchBar = () => {
-  return <div className="searchbar"></div>;
+  return (
+    <div className="searchbar">
+      <div className="searchbar-buttons-container">
+        <button>Anywhere</button>
+        <button>Any week</button>
+        <button className="guest">
+          <span>Add guests</span>
+          <div className="search-icon">
+            <SearchIcon />
+          </div>
+        </button>
+      </div>
+    </div>
+  );
 };
 
 const Actions = () => {

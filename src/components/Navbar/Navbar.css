@@ -7,6 +7,73 @@
     justify-content: space-between;
 }
 
+.searchbar{
+    height: 48px;
+}
+
+.searchbar .searchbar-buttons-container{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--clr-light-grey);
+    border-radius: 900px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.09);
+    height: 100%;
+}
+
+.searchbar .searchbar-buttons-container button{
+    padding: 0.4rem 0.25rem;
+    height: 100%;
+    position: relative;
+}
+
+.searchbar .searchbar-buttons-container .guest{
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    color: rgb(149, 149, 149);
+}
+
+.searchbar .searchbar-buttons-container .guest .search-icon{
+    width: 32px;
+    height: 32px;
+    background-color: var(--brand-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.searchbar .searchbar-buttons-container:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.searchbar .searchbar-buttons-container button:last-child{
+    padding-right: 0.4rem;
+    padding-left: 0.7rem;
+}
+
+.searchbar .searchbar-buttons-container button:not(:last-child){
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+.searchbar .searchbar-buttons-container button:first-child{
+    padding-left: 1.75rem;
+}
+
+.searchbar .searchbar-buttons-container button:not(:last-child)::after{
+    content: '';
+    width: 1px;
+    height: 50%;
+    background-color: var(--clr-light-grey);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(50%);
+}
+
+
 .navbar .logo-container{
     height: 100%;
     display: flex;
